@@ -121,7 +121,7 @@ jobs:
       runs-on: ${{ matrix.runs-on }}
       fips: ${{ matrix.fips == true }}
       save-cache: true
-      sumo_component_gomod_version: "v${{ needs.get-version.outputs.version }}"
+      sumo_component_gomod_version: "v0.102.1-sumo-0-rc.0-2-gb78a7"
     secrets:
       apple_developer_certificate_p12_base64: ${{ secrets.APPLE_DEVELOPER_CERTIFICATE_P12_BASE64 }}
       apple_developer_certificate_password: ${{ secrets.APPLE_DEVELOPER_CERTIFICATE_PASSWORD }}
