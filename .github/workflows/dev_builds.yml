@@ -107,7 +107,7 @@ jobs:
   build:
     name: Build
     uses: ./.github/workflows/workflow-build.yml
-    needs: [get-version]
+    # needs: [get-version]
     strategy:
       fail-fast: false
       matrix:
