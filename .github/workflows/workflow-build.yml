@@ -193,7 +193,7 @@ jobs:
           p12-password: ${{ secrets.apple_developer_certificate_password }}
 
       - name: Sign the mac binaries
-        if: ${{ runner.os == 'macOS' && env.MACOS_SIGNING_ENABLED == 'true' }}
+        if: ${{ runner.os == 'macOS' }}
         env:
           AC_PASSWORD: ${{ secrets.app_store_connect_password }}
         working-directory: ./otelcolbuilder/
